@@ -36,7 +36,6 @@ public class JsonObjectToJsonTest {
         JsonObject jsonObject = new JsonObject(jSurname, jActive);
 
         String expectedJSON = "{'surname': 'Nik', 'active': true}";
-
         JSONAssert.assertEquals(expectedJSON, jsonObject.toJson(), true);
     }
 
@@ -69,7 +68,6 @@ public class JsonObjectToJsonTest {
         );
 
         String expectedJSON = "{'name': 'Anna', 'age': 20, 'status': null}";
-
         JSONAssert.assertEquals(expectedJSON, jsonObject.toJson(), true);
     }
 }

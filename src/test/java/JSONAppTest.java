@@ -20,6 +20,7 @@ public class JSONAppTest {
                         "{'course': 'Math', 'mark': 2, 'passed': false}" +
                         "]}";
 
+
         JSONAssert.assertEquals(expectedJSON, jsonObject.toJson(), true);
     }
 }
